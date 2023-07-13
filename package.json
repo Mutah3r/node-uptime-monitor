@@ -1,0 +1,9 @@
+{
+  "name": "node-uptime-monitor",
+  "version": "1.0.0",
+  "description": "A RestFul API to monitor up or down time of user defined link",
+  "main": "index.js",
+  "repository": "https://github.com/Mutah3r/node-uptime-monitor",
+  "author": "Mutaher Ahmed Shakil",
+  "license": "MIT"
+}
