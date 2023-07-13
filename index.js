@@ -8,6 +8,7 @@
 
 // dependencies
 const http = require('http');
+const { handleReqRes } = require('./helpers/handleReqRes');
 
 // app object - module scaffolding
 const app = {};
@@ -21,16 +22,12 @@ app.config = {
 app.createServer = () => {
     const server = http.createServer(app.handleReqRes);
     server.listen(app.config.port, () => {
-        // console.log(`listening to port`);
         console.log('server running')
     });
 }
 
-// handle Request Response
-app.handleReqRes = (req, res) => {
-    // response handle
-    res.end("Uptime monitor server is running");
-}
+// handle request response
+app.handleReqRes = handleReqRes;
 
 // start the server
 app.createServer();
