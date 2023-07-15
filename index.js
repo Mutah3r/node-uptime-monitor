@@ -17,9 +17,9 @@ const app = {};
 
 // testing file system
 // @TODO: erase the testing code later 
-data.delete('test', 'newFile', (err) => {
-    console.log(err);
-});
+// data.delete('test', 'newFile', (err) => {
+//     console.log(err);
+// });
 
 // create server
 app.createServer = () => {
